@@ -1,6 +1,7 @@
 console.log(`Archivo de bucle white cargado`)
 //git init para iniciar el repositorio
-//git add . para llevar a la zona stage mis cambios 
+//git add . para llevar a la zona stage mis cambios
+//git commit -m guardar mis cambios en mi pc local 
 // gir fetch para preguntar si hay cambios en la nube
 // git push es para enviar los cambios en el local hacia la nube
 // git pull origin main
@@ -30,15 +31,23 @@ while (counter <= 10) {
 
 }
 
-/* EJERCICIO 1
-Solicitar al usuario un número a través de un prompt empezando desde 1 e ir incrementando este valor de a 1 a medida que recorremos todos los números enteros anteriores e incluído el ingresado por el usuario. Quiero hacer un log de aquellos que son múltiplos de 7
-El log debe ser : el número X es múltiplo de 7
+//EJERCICIO 1
+// Solicitar al usuario un número a través de un prompt empezando desde 1 e ir incrementando este valor de a 1 a medida que recorremos todos los números enteros anteriores e incluído el ingresado por el usuario. Quiero hacer un log de aquellos que son múltiplos de 7
+// El log debe ser : el número X es múltiplo de 7
+const numeroIngresado = parseInt(prompt("Ingrese un numero para calcular sus multiplos"))
+let numero= 1
+while(numero <= numeroIngresado){
+    if(numero % 7 === 0){
+        console.log(`El numero ${numero}es multiplo de 7`)
+    }
+
+    numero++;
+}
 
 
-EJERCICIO 2
-Solicitar a una maestra que ingresa las calificaciones de sus alumnos, pedir constantemente las notas hasta que la maestra ingrese un 0 como valor. En ese momento saldremos de nuestro bucle e imprimiremos el promedio del curso según las notas ingresadas
-
-*/
+// EJERCICIO 2
+// Solicitar a una maestra que ingresa las calificaciones de sus alumnos, pedir constantemente las notas hasta que la maestra ingrese un 0 como valor. En ese momento saldremos de nuestro bucle e imprimiremos el promedio del curso según las notas ingresadas
+//
 
 let nota //= parseInt (prompt("Ingrese la calificacion del alumno"))
 let cantidadNotas = 0;
